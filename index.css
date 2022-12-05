@@ -152,6 +152,12 @@ nav img {
   max-height: 300px;
   object-fit: cover;
   border-radius: 30px;
+  transition: 250ms ease-in-out;
+}
+
+.header-item > div > img:hover {
+  scale: 1.025;
+  cursor: pointer;
 }
 
 .header-text {
