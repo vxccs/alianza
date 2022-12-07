@@ -4,3 +4,9 @@ const menu = document.querySelector('.mobile-dropdown');
 btnMenu.addEventListener('click', (e) => {
   menu.classList.toggle('show-menu');
 });
+
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !btnMenu.contains(e.target)) {
+    menu.classList.remove('show-menu');
+  }
+});
