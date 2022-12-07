@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('assets/header-bg.png');
+  background-image: url('assets/header-bg.jpg');
   background-position: center center;
   background-size: cover;
   color: white;
@@ -137,7 +137,9 @@ body {
 
 .about-img {
   width: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .about-text p:nth-child(1) {
@@ -171,8 +173,9 @@ body {
 }
 
 .img-cat {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   transition: 250ms ease-in-out;
 }
@@ -196,7 +199,7 @@ body {
 }
 
 #cat-text h4:hover {
-  color: rgb(92, 91, 91);
+  color: rgb(14, 0, 216);
 }
 
 #categorias {
