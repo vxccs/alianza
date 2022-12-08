@@ -105,8 +105,8 @@ nav img {
   background-color: white;
   padding: 2rem;
   border-radius: 30px;
-  width: 90vw;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 0.25);
+  width: calc(100vw - 2rem);
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.25);
   visibility: hidden;
   opacity: 0;
   transition: 250ms ease-in-out;
