@@ -79,11 +79,12 @@ body {
 }
 
 .second-nav-wrapper {
-  background-color: white;
+  background-color: rgb(255 255 255 / 0.8);
   box-shadow: 0 0 10px rgb(0 0 0 / 0.25);
   position: sticky;
   top: 0;
   z-index: 5;
+  backdrop-filter: blur(5px) saturate(2.5);
 }
 
 .second-nav {
@@ -120,6 +121,13 @@ body {
 
 .search-svg {
   width: 25px;
+}
+
+.second-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 /* about */
