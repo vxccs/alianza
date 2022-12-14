@@ -16,10 +16,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('assets/header-bg.png'), url('assets/footer-bg.png');
-  background-position: center top, left bottom;
-  background-size: 130%, 150%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url('assets/footer-bg.png');
+  background-position: left bottom;
+  background-size: 150%;
+  background-repeat: no-repeat;
   font-family: var(--inter-font);
   color: rgb(var(--body-color));
 }
@@ -27,11 +27,10 @@ body {
 /* nav */
 
 nav {
-  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 nav img {
@@ -152,6 +151,10 @@ nav img {
 
 /* header */
 
+main {
+  padding-top: 3rem;
+}
+
 .header-item {
   display: flex;
   flex-direction: row;
@@ -219,32 +222,51 @@ nav img {
 
 /* sobre nosotros */
 
-#sobre-nosotros {
-  margin-top: 5rem;
-  position: relative;
+header {
+  padding-block: 30px;
+  background-image: url('assets/header-bg.png');
+  background-position: center top;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-color: #e1e1e1;
+  border-radius: 0 0 0 10vw;
+}
+
+.about-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 2rem;
 }
 
 .sobre-div {
-  background-color: rgb(225, 225, 225);
-  text-align: center;
-  padding: 3rem 2.5rem;
-  border-radius: 30px;
+  text-align: left;
+  flex: 1.125;
 }
 
-.sobre-div img {
-  max-width: 100%;
-  max-height: 75px;
+.sobre-div h1 {
+  font-family: var(--josefin-font);
+  font-size: 48px;
+  margin: 0;
 }
 
 .sobre-div p {
-  padding-inline: 10rem;
+  margin: 0;
+  font-size: 18px;
+}
+
+.img-div {
+  flex: 2;
+}
+
+.img-div img {
+  max-width: 100%;
+  text-align: right;
 }
 
 #leer-mas {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  translate: -50% 50%;
   background-color: rgb(var(--accent-color));
   border-color: rgb(var(--accent-color));
   color: white;
@@ -372,6 +394,20 @@ hr {
     height: 30px;
     cursor: pointer;
   }
+  .about-wrapper {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .sobre-div {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .sobre-div h1 {
+    font-size: 36px;
+  }
+  .sobre-div p {
+    font-size: 16px;
+  }
   .header-item {
     gap: 1rem;
   }
@@ -393,12 +429,10 @@ hr {
   .header-text button {
     font-size: 16px;
   }
-  .sobre-div p,
   #contacto-div {
     padding-inline: 0;
   }
   .footer-links {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 0.5rem;
     align-items: center;
