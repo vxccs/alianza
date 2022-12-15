@@ -233,7 +233,7 @@ nav img {
   background-size: cover;
   width: 100%;
   min-width: 250px;
-  height: calc(100% - 48px);
+  height: calc(100% - 60px);
   border-radius: 1rem;
 }
 
