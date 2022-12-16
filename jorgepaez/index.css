@@ -168,11 +168,6 @@ html {
   line-height: 1;
 }
 
-#marcas hr {
-  border-top: 1px solid #c0c0c0;
-  margin-bottom: 0.25rem;
-}
-
 #marcas span {
   color: rgb(var(--accent-color));
   font-weight: bold;
@@ -208,6 +203,14 @@ html {
 .ver-mas h3 {
   font-size: 16px;
   color: rgb(var(--body-color), 0.75);
+  transition: 250ms ease-in-out;
+}
+
+#h3-amatic:hover {
+  color: #33572a;
+}
+#h3-superB:hover {
+  color: #0a549a;
 }
 
 .marcas-verMas {
@@ -216,8 +219,121 @@ html {
   gap: 0.75rem;
 }
 
+/* ubicacion */
+
+#ubicacion {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 100%;
+}
+
+/* redes */
+
+#redes {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#redes-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2px;
+}
+
+.social-icons a {
+  line-height: 0;
+}
+
+.social-icons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-icons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons > a > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons > a > svg > path {
+  fill: rgb(var(--body-color));
+}
+
+/* comparte */
+
+.qr-img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.comparte-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* footer */
+
+footer {
+  background-color: #080808;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 2.5rem 0 0;
+}
+
+footer p {
+  font-family: var(--josefin-font);
+  line-height: 1.5;
+}
+
+/* general */
+
+hr {
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 0.25rem;
+}
+
+/* queries */
+
 @media (min-width: 600px) {
   #headline {
     border-radius: 0 0 4rem 4rem;
+  }
+  footer {
+    border-radius: 2rem 2rem 0 0;
   }
 }
